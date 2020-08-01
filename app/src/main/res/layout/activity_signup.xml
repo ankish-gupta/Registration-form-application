@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".signup"
+android:background="#FFBBDEFB"
+android:orientation="vertical"
+android:padding="25sp">
+
+<TextView
+    android:id="@+id/heading1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Signup_Form"
+    android:layout_marginStart="68dp"
+    android:fontFamily="serif-monospace"
+    android:textStyle="bold"
+    android:textSize="35sp"
+    />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/FirstName"
+    android:hint="@string/First_Name"
+    android:layout_marginTop="75dp"
+    android:inputType="text|textCapWords"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:autofillHints="no" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LastName"
+    android:hint="@string/Last_Name"
+    android:layout_marginTop="15sp"
+    android:inputType="text|textCapWords"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:importantForAutofill="no" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="15sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gender"
+        android:background="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_marginEnd="10sp"
+        android:id="@+id/Gender"/>
+
+    <RadioGroup
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/ChooseGender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Male"
+            android:layout_marginEnd="10sp"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-light"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Female"
+            android:layout_marginEnd="10sp"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-light"/>
+
+    </RadioGroup>
+</LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/PhoneNo"
+    android:hint="@string/Phone_no"
+    android:layout_marginTop="15sp"
+    android:inputType="phone"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:importantForAutofill="no"
+    tools:ignore="TextFields"
+    android:maxLength="10"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Address"
+    android:hint="@string/Address"
+    android:layout_marginTop="15sp"
+    android:inputType="textPostalAddress"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:lines="3"
+    android:importantForAutofill="no" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Email"
+    android:hint="@string/Email"
+    android:layout_marginTop="15sp"
+    android:inputType="textEmailAddress"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    tools:ignore="TextFields"
+    android:importantForAutofill="no" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Password"
+    android:hint="@string/Password"
+    android:layout_marginTop="15sp"
+    android:inputType="textPassword"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:importantForAutofill="no" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/confirmPassword"
+    android:hint="@string/Confirm_Password"
+    android:layout_marginTop="15sp"
+    android:inputType="textPassword"
+    android:background="#FFFFFF"
+    android:textSize="23sp"
+    android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="25sp">
+
+
+<Button
+    android:layout_width="0sp"
+    android:layout_height="wrap_content"
+    android:id="@+id/Signup"
+    android:layout_weight="1"
+    android:text="@string/Sign_up"
+    android:background="#803CE3"
+    android:textSize="25sp"
+    android:textColor="#FFFFFF"
+    tools:ignore="ButtonStyle,RtlHardcoded"
+    />
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cancel"
+            android:layout_weight="1"
+            android:text="@string/Cancel"
+            android:background="#803CE3"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle,RtlHardcoded"
+            />
+    </LinearLayout>
+
+</LinearLayout>

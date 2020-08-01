@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">heyfoodie</string>
+    <string name="signup_form">Signup Form</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Phone_no">Phone no</string>
+    <string name="Email">Email</string>
+    <string name="Address">Address</string>
+    <string name="Password">Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Sign_up">Sign up</string>
+    <string name="gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Gender">Gender</string>
+    <string name="Female">Female</string>
+    <string name="Signup_Form">Signup Form</string>
+    <string name="Signin_Form">Signin Form</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="Cancel">Cancel</string>
+    <string name="welcome_text">Welcome Text</string>
+
+</resources>

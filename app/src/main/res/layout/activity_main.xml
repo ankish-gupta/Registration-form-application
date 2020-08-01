@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFBBDEFB"
+    android:orientation="vertical"
+    android:padding="25sp"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Signin_Form"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:autofillHints="no"
+        android:background="#FFFFFF"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress|textCapWords"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="#FFFFFF"
+        android:hint="@string/Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Signin"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#803CE3"
+            android:text="@string/Sign_in"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            tools:ignore="ButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#803CE3"
+            android:text="@string/Sign_up"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            tools:ignore="ButtonStyle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
